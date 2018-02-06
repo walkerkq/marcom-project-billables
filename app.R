@@ -65,7 +65,9 @@ server <- function(input, output) {
   
   # send to dashboard
   dash <- eventReactive(input$sendData, {
-    sendData(data1())
+    withProgress(message = "Sending...", value = 0, { 
+      sendData(data1())
+    })
   })
   
   # Output the table
@@ -80,7 +82,7 @@ server <- function(input, output) {
   
   # output that we sent it
   output$status <- renderText({
-    print(dash())
+    dash()
   })
 
   # Download csv 

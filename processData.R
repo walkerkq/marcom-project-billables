@@ -9,14 +9,11 @@ keep_codes <- c("WEB5000", "WEB5500", "WEB5555", "WEB5566", "WEB5600", "WEB5700"
                 "COM0044", "COM0046", "COM0047", "COM0048", "COM0049", 
                 "WEB0020", "WEB5010", "COM5500")
 
-# Requires a df with the column "Job.Number"
-
 processData <- function(df){
   
+  # Requires a df with the column "Job.Number"
   if(!"Job.Number" %in% colnames(df)) {
-    
     project_data <- "Error: This file does not have a column titled 'Job.Number'"
-    
   } else {
     
     # remove blanks
