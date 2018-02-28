@@ -54,7 +54,7 @@ processData <- function(df){
     avg_date <- median(project_data$Date.Billed, na.rm=T)
     project_data$Date.Billed[is.na(project_data$Date.Billed)] <- avg_date
     month.start <- format(avg_date, "%Y-%m-01")
-    month.end <- format(avg_date, "%Y-%m-31")
+    month.end <- ifelse(month.start == "2018-02-01", format(avg_date, "%Y-%m-28"), format(avg_date, "%Y-%m-30"))
     project_data$Date.Billed[project_data$Date.Billed < month.start | project_data$Date.Billed > month.end] <- avg_date
     
   }
