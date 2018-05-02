@@ -1,0 +1,12 @@
+name: marcom-project-billables
+title: marcom-project-billables
+username:
+account: walkerkq
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 273921
+bundleId: 1210385
+url: https://walkerkq.shinyapps.io/marcom-project-billables/
+when: 1517935940.58115
+asMultiple: FALSE
+asStatic: FALSE
