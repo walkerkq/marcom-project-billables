@@ -7,7 +7,8 @@ keep_codes <- c("WEB5000", "WEB5500", "WEB5555", "WEB5566", "WEB5600", "WEB5700"
                 "COM0014", "COM0015", "COM0016", "COM0019", "COM0022", "COM0023",
                 "COM0032", "COM0033", "COM0034", "COM0035", "COM0038", "COM0041",
                 "COM0044", "COM0046", "COM0047", "COM0048", "COM0049", "COM0012",
-                "WEB0020", "WEB5010", "COM5500", "WEB0030", "COM0240", "COM0066")
+                "WEB0020", "WEB5010", "COM5500", "WEB0030", "COM0240", "COM0066",
+                "COM0043")
 
 processData <- function(df){
   
